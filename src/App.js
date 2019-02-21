@@ -44,7 +44,7 @@ class App extends Component {
                                                   </span>
                                               </td>
                                               <td>
-                                                  <span>우리집 신선계란 30 개입 대란</span>
+                                                  <span className="title">우리집 신선계란 30 개입 대란</span>
                                               </td>
                                               <td>
                                                   <p className="price"><span>5,780</span>원</p>
@@ -57,7 +57,7 @@ class App extends Component {
                                                   </span>
                                               </td>
                                               <td>
-                                                  <span>양란 30개입 특란</span>
+                                                  <span className="title">양란 30개입 특란</span>
                                               </td>
                                               <td>
                                                   <p className="price"><span>5,780</span>원</p>
@@ -70,7 +70,7 @@ class App extends Component {
                                                   </span>
                                               </td>
                                               <td>
-                                                  <span>어린닭이 낳은 꼬마계란 30개입</span>
+                                                  <span className="title">어린닭이 낳은 꼬마계란 30개입</span>
                                               </td>
                                               <td>
                                                   <p className="price"><span>5,780</span>원</p>
@@ -83,7 +83,7 @@ class App extends Component {
                                                   </span>
                                               </td>
                                               <td>
-                                                  <span>일판란 1,800g(30구/특란)</span>
+                                                  <span className="title">일판란 1,800g(30구/특란)</span>
                                               </td>
                                               <td>
                                                   <p className="price"><span>5,780</span>원</p>
@@ -96,7 +96,7 @@ class App extends Component {
                                                   </span>
                                               </td>
                                               <td>
-                                                  <span>국산 하얀달걀 (30구/대란)</span>
+                                                  <span className="title">국산 하얀달걀 (30구/대란)</span>
                                               </td>
                                               <td>
                                                   <p className="price"><span>5,780</span>원</p>
@@ -109,7 +109,7 @@ class App extends Component {
                                                   </span>
                                               </td>
                                               <td>
-                                                  <span>[경기용인] 산지직송 무항생제 유정란 30구</span>
+                                                  <span className="title">[경기용인] 산지직송 무항생제 유정란 30구</span>
                                               </td>
                                               <td>
                                                   <p className="price"><span>5,780</span>원</p>
@@ -122,7 +122,7 @@ class App extends Component {
                                                   </span>
                                               </td>
                                               <td>
-                                                  <span>우리집 신선계란 30 개입 대란</span>
+                                                  <span className="title">우리집 신선계란 30 개입 대란</span>
                                               </td>
                                               <td>
                                                   <p className="price"><span>5,780</span>원</p>
@@ -135,7 +135,7 @@ class App extends Component {
                                                   </span>
                                               </td>
                                               <td>
-                                                  <span>우리집 신선계란 30 개입 대란</span>
+                                                  <span className="title">우리집 신선계란 30 개입 대란</span>
                                               </td>
                                               <td>
                                                   <p className="price"><span>5,780</span>원</p>
@@ -148,7 +148,7 @@ class App extends Component {
                                                   </span>
                                               </td>
                                               <td>
-                                                  <span>우리집 신선계란 30 개입 대란</span>
+                                                  <span className="title">우리집 신선계란 30 개입 대란</span>
                                               </td>
                                               <td>
                                                   <p className="price"><span>5,780</span>원</p>
@@ -161,7 +161,7 @@ class App extends Component {
                                                   </span>
                                               </td>
                                               <td>
-                                                  <span>우리집 신선계란 30 개입 대란</span>
+                                                  <span className="title">우리집 신선계란 30 개입 대란</span>
                                               </td>
                                               <td>
                                                   <p className="price"><span>5,780</span>원</p>
@@ -174,7 +174,7 @@ class App extends Component {
                                                   </span>
                                               </td>
                                               <td>
-                                                  <span>우리집 신선계란 30 개입 대란</span>
+                                                  <span className="title">우리집 신선계란 30 개입 대란</span>
                                               </td>
                                               <td>
                                                   <p className="price"><span>5,780</span>원</p>
@@ -187,7 +187,7 @@ class App extends Component {
                                                   </span>
                                               </td>
                                               <td>
-                                                  <span>우리집 신선계란 30 개입 대란</span>
+                                                  <span className="title">우리집 신선계란 30 개입 대란</span>
                                               </td>
                                               <td>
                                                   <p className="price"><span>5,780</span>원</p>

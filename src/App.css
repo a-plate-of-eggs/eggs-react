@@ -34,7 +34,7 @@
 
 /*reset.css*/
 * {margin:0;padding:0;box-sizing:border-box}
-html,body {width:100%;font-size:15px}
+html,body {width:100%;font-size:15px;height:100%}
 html {height:100%}
 body {background:#fff;-webkit-text-size-adjust:none}
 body,th,td,input,select,textarea,button {color:#717171;line-height:1.5;font-family:'Noto Sans Korean', 'BM-JUA', Arial, sans-serif;letter-spacing:-1px;word-spacing:1px}
@@ -74,35 +74,37 @@ input::-moz-placeholder {color:#8f95a0}
 .clearfix:after{content:"";display:block;clear:both}
 
 /*common.css*/
-.layout{width:100%;background: #fff;position: relative;overflow: hidden;}
+#root{position: relative;min-height: 100%}
+.layout{width:100%;background: #fff;/*position: relative;*/overflow: hidden;}
 .header{position: absolute;left:0;top:0;width:100%}
-.header .hd_area{width:1280px;margin:auto;padding: 20px 0}
+.header .hd_area{max-width:1280px;margin:auto;padding: 20px 0}
 .header .logo_area{display:inline-block;vertical-align: middle}
 .header .logo{width:150px;height:58px;background: url(images/eggs-logo.png) 0 50% no-repeat;background-size: cover}
 .header .logo a{display: block;color:#333;text-indent:-9999px}
 
-.footer{width:100%;position: relative;background:#fec403;}
-.footer .ft_area{width:1280px;margin:auto;}
+.footer{width:100%;position: absolute;background:#fec403;left:0;bottom:0}
+.footer .ft_area{max-width:1280px;margin:auto;}
 .footer .txt_copyright{padding: 10px 0;text-align: center;color:#fff;font-weight: 400;font-size: 14px}
 
-.content{width: 100%;background: #fff;height: 100%;padding-top:85px;}
-.content .content_box{width: 1280px;margin:auto;}
+.content{width: 100%;background: #fff;height: 100%;padding:85px 0 41px;}
+.content .content_box{max-width: 1280px;margin:auto;}
 .content .top_title p{color: #474747;text-align: center;font-size: 60px;font-weight: 700;margin-bottom:20px}
-.content .cnt_area{width: 1280px;margin: auto;padding: 20px;background: #f4f4f4;margin-bottom:43px;}
+.content .cnt_area{max-width: 1280px;margin: auto;padding: 20px;background: #f4f4f4;margin-bottom:43px;}
 .content .info_left{width:75%;display: inline-block;vertical-align:top}
-.content .info_rgt{width:24%;display: inline-block;vertical-align:top;padding:0 20px;box-sizing: border-box}
+.content .info_rgt{width:25%;display: inline-block;vertical-align:top;padding-left:20px;box-sizing: border-box}
 .content .main_title{font-size: 24px;text-align: left;font-weight: 500;color: #333;margin-bottom: 5px}
 .content .info_left .info_wrap{width: 100%;}
 .content .info_left .img_area{width:38%;display:inline-block;vertical-align: middle;text-align: center;background: #fff;}
 .content .info_left .img_area img{width: 100%;display: inline-block}
 .content .info_left .img_area p{font-size: 14px;color:#333;font-weight: 400;text-align: center;padding-bottom: 15px}
-.content .info_left .list_area{width:61%;display:inline-block;vertical-align: top;box-sizing: border-box;padding-left: 20px;}
+.content .info_left .list_area{width:61%;display:inline-block;vertical-align: middle;box-sizing: border-box;padding-left: 20px;}
 .content .info_left .top_price{color:#333;font-weight: 700;font-size: 18px;padding-bottom:5px;border-bottom:1px solid #666;margin-bottom:10px;}
 .content .info_left .top_price span{display: inline-block;color:#fec403;margin-left:20px;font-weight: 700;font-size: 28px;}
 .content .info_left .top_price em{display: inline-block;color:#fec403;}
 .content .info_left .list_wrap{height:325px;overflow-y: scroll}
 .content .info_left .info_list{width:100%;}
 .content .info_left .info_list tbody tr td{font-size: 14px;color:#333;padding:3px 0;}
+.content .info_left .info_list tbody tr td .price{text-align:right}
 .content .info_left .info_list tbody tr td .price > span{display: inline-block;font-size: 17px;color:#333;font-weight: 400}
 .content .info_left .info_list tbody tr td .type_logo{display: inline-block;width:80px;height:22px;}
 .content .info_left .info_list tbody tr td:nth-child(1){width:25%}
@@ -117,3 +119,47 @@ input::-moz-placeholder {color:#8f95a0}
 .content .info_rgt .slc_period li.on .ico_chk{background: url(images/check-icon-active.png) 0 50% no-repeat;}
 
 .content .deco_egg{display:inline-block;position: absolute;right:130px;top:30px;width: 320px;height: 320px;background: url(images/eggs-img.png) 0 50% no-repeat;background-size: cover;opacity: 0.75;}
+
+@media screen and (max-width: 1280px) {
+  .header .hd_area{padding:20px;}
+  .content .content_box{box-sizing: border-box;padding:0 30px}
+  .content .info_left{width:72%}
+  .content .info_rgt{width:28%;}
+}
+
+@media screen and (max-width: 960px) {
+  .content .cnt_area{padding:30px}
+  .content .info_left{width:100%}
+  .content .info_left .img_area img{max-width:400px}
+  .content .info_left .list_area{width:100%;padding-left:0;margin-top:10px}
+  .content .info_rgt{width:100%;padding-left:0;margin-top:10px}
+  .content .info_left .img_area{width:100%}
+  .content .info_left .top_price{text-align:right;}
+  .content .top_title p{font-size:55px}
+}
+
+@media screen and (max-width: 640px) {
+  .content .top_title p{font-size:40px}
+  .content .main_title{font-size:22px;}
+  .content .info_left .img_area img{max-width:300px}
+  .header .logo{width:100px;height: 38px;}
+  .content .info_left .info_list tbody tr td .type_logo{width:65px;height:20px}
+  .content .info_left .info_list tbody tr td:nth-child(1){width:20%}
+  .content .info_left .info_list tbody tr td:nth-child(2){width:63%}
+  .content .info_left .info_list tbody tr td:nth-child(3){width:17%}
+}
+
+@media screen and (max-width: 480px) {
+  .content .content_box{padding:0}
+  .content .main_title{padding-left: 30px;box-sizing:border-box;}
+  .content .cnt_area{margin-bottom: 0}
+  .content .top_title p{font-size:32px}
+  .content .main_title{font-size:20px;}
+  .content .info_left .img_area img{max-width:200px}
+  .content .info_left .info_list tbody tr td .type_logo{width:45px;height:20px}
+  .content .info_left .info_list tbody tr td:nth-child(1){width:20%}
+  .content .info_left .info_list tbody tr td:nth-child(2){width:63%}
+  .content .info_left .info_list tbody tr td:nth-child(3){width:17%}
+  .content .info_left .info_list tbody tr td .price > span{font-size:15px;}
+  .content .info_left .info_list tbody tr td .title{font-size:12px;display: inline-block;word-break: keep-all;line-height: 1.2}
+}
