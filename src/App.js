@@ -1,13 +1,32 @@
 import React, { Component } from 'react';
 import sampleThumb from './images/eggs_sampleImage.jpg';
-import emartLogo from './images/emart-logo.png';
+/*import emartLogo from './images/emart-logo.png';
 import homeplusLogo from './images/homeplus-logo.png';
-import lottemartLogo from './images/lottemart-logo.png';
+import lottemartLogo from './images/lottemart-logo.png';*/
 import './App.css';
+import ProductList from './ProductList';
 
 class App extends Component {
+  id=2;
+  state = {
+    information: [
+      {
+        type: '이마트',
+        name: '계란30구',
+        price: '4500',
+        id: 0
+      },
+      {
+        type: '롯데마트',
+        name: '계란30구',
+        price: '4500',
+        id: 1
+      }
+    ]
+  }
   render() {
     return (
+      <div>
       <div id="eggsBox" className="layout">
         <div className="header"> 
             <div className="hd_area">
@@ -19,7 +38,6 @@ class App extends Component {
             </div>
         </div>
         <div className="content">
-            {/*<span className="deco_egg"></span>*/}
             <div className="top_title">
                 <p>계란, 살까?말까?</p>
             </div>
@@ -37,7 +55,7 @@ class App extends Component {
                                 <div className="list_wrap">
                                   <table className="info_list">
                                       <tbody>
-                                          <tr>
+                                          {/*<tr>
                                               <td>
                                                   <span className="type_logo">
                                                       <img src={emartLogo} alt="이마트"/>
@@ -49,150 +67,8 @@ class App extends Component {
                                               <td>
                                                   <p className="price"><span>5,780</span>원</p>
                                               </td>
-                                          </tr>
-                                          <tr>
-                                              <td>
-                                                  <span className="type_logo">
-                                                      <img src={homeplusLogo} alt="홈플러스"/>
-                                                  </span>
-                                              </td>
-                                              <td>
-                                                  <span className="title">양란 30개입 특란</span>
-                                              </td>
-                                              <td>
-                                                  <p className="price"><span>5,780</span>원</p>
-                                              </td>
-                                          </tr>
-                                          <tr>
-                                              <td>
-                                                  <span className="type_logo">
-                                                      <img src={lottemartLogo} alt="롯데마트"/>
-                                                  </span>
-                                              </td>
-                                              <td>
-                                                  <span className="title">어린닭이 낳은 꼬마계란 30개입</span>
-                                              </td>
-                                              <td>
-                                                  <p className="price"><span>5,780</span>원</p>
-                                              </td>
-                                          </tr>
-                                          <tr>
-                                              <td>
-                                                  <span className="type_logo">
-                                                      <img src={lottemartLogo} alt="롯데마트"/>
-                                                  </span>
-                                              </td>
-                                              <td>
-                                                  <span className="title">일판란 1,800g(30구/특란)</span>
-                                              </td>
-                                              <td>
-                                                  <p className="price"><span>5,780</span>원</p>
-                                              </td>
-                                          </tr>
-                                          <tr>
-                                              <td>
-                                                  <span className="type_logo"> 
-                                                      <img src={lottemartLogo} alt="롯데마트"/>
-                                                  </span>
-                                              </td>
-                                              <td>
-                                                  <span className="title">국산 하얀달걀 (30구/대란)</span>
-                                              </td>
-                                              <td>
-                                                  <p className="price"><span>5,780</span>원</p>
-                                              </td>
-                                          </tr>
-                                          <tr>
-                                              <td>
-                                                  <span className="type_logo">
-                                                      <img src={lottemartLogo} alt="롯데마트"/>
-                                                  </span>
-                                              </td>
-                                              <td>
-                                                  <span className="title">[경기용인] 산지직송 무항생제 유정란 30구</span>
-                                              </td>
-                                              <td>
-                                                  <p className="price"><span>5,780</span>원</p>
-                                              </td>
-                                          </tr>
-                                          <tr>
-                                              <td>
-                                                  <span className="type_logo">
-                                                      <img src={lottemartLogo} alt="롯데마트"/>
-                                                  </span>
-                                              </td>
-                                              <td>
-                                                  <span className="title">우리집 신선계란 30 개입 대란</span>
-                                              </td>
-                                              <td>
-                                                  <p className="price"><span>5,780</span>원</p>
-                                              </td>
-                                          </tr>
-                                          <tr>
-                                              <td>
-                                                  <span className="type_logo">
-                                                      <img src={lottemartLogo} alt="롯데마트"/>
-                                                  </span>
-                                              </td>
-                                              <td>
-                                                  <span className="title">우리집 신선계란 30 개입 대란</span>
-                                              </td>
-                                              <td>
-                                                  <p className="price"><span>5,780</span>원</p>
-                                              </td>
-                                          </tr>
-                                          <tr>
-                                              <td>
-                                                  <span className="type_logo">
-                                                      <img src={lottemartLogo} alt="롯데마트"/>
-                                                  </span>
-                                              </td>
-                                              <td>
-                                                  <span className="title">우리집 신선계란 30 개입 대란</span>
-                                              </td>
-                                              <td>
-                                                  <p className="price"><span>5,780</span>원</p>
-                                              </td>
-                                          </tr>
-                                          <tr>
-                                              <td>
-                                                  <span className="type_logo">
-                                                      <img src={lottemartLogo} alt="롯데마트"/>
-                                                  </span>
-                                              </td>
-                                              <td>
-                                                  <span className="title">우리집 신선계란 30 개입 대란</span>
-                                              </td>
-                                              <td>
-                                                  <p className="price"><span>5,780</span>원</p>
-                                              </td>
-                                          </tr>
-                                          <tr>
-                                              <td>
-                                                  <span className="type_logo">
-                                                      <img src={lottemartLogo} alt="롯데마트"/>
-                                                  </span>
-                                              </td>
-                                              <td>
-                                                  <span className="title">우리집 신선계란 30 개입 대란</span>
-                                              </td>
-                                              <td>
-                                                  <p className="price"><span>5,780</span>원</p>
-                                              </td>
-                                          </tr>
-                                          <tr>
-                                              <td>
-                                                  <span className="type_logo">
-                                                      <img src={lottemartLogo} alt="롯데마트"/>
-                                                  </span>
-                                              </td>
-                                              <td>
-                                                  <span className="title">우리집 신선계란 30 개입 대란</span>
-                                              </td>
-                                              <td>
-                                                  <p className="price"><span>5,780</span>원</p>
-                                              </td>
-                                          </tr>
+                                          </tr>*/}
+                                          <ProductList data={this.state.information}/>
                                       </tbody>
                                   </table>
                                 </div>
@@ -224,8 +100,10 @@ class App extends Component {
             </div>
         </div>
     </div>
+    </div>
     );
   }
 }
-
 export default App;
+
+
