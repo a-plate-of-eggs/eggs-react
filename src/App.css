@@ -101,7 +101,7 @@ input::-moz-placeholder {color:#8f95a0}
 .content .info_left .top_price{color:#333;font-weight: 700;font-size: 18px;padding-bottom:5px;border-bottom:1px solid #666;margin-bottom:10px;}
 .content .info_left .top_price span{display: inline-block;color:#fec403;margin-left:20px;font-weight: 700;font-size: 28px;}
 .content .info_left .top_price em{display: inline-block;color:#fec403;}
-.content .info_left .list_wrap{height:325px;overflow-y: scroll}
+.content .info_left .list_wrap{height:325px;overflow-y: auto}
 .content .info_left .info_list{width:100%;}
 .content .info_left .info_list tbody tr td{font-size: 14px;color:#333;padding:3px 0;}
 .content .info_left .info_list tbody tr td .price{text-align:right}
